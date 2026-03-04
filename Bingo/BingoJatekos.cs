@@ -8,23 +8,24 @@ namespace Bingo
 {
 	internal class BingoJatekos
 	{
-		private List<string> nev;
-		private char[,] kartya;
+		private string nev;
+		private int[,] kartya;
 
-		public List<string> Nev { get => nev; set => nev = value; }
-		public char[,] Kartya { get => kartya; set => kartya = value; }
+		
+		public int[,] Kartya { get => kartya; set => kartya = value; }
+		public string Nev { get => nev; set => nev = value; }
 
-		public BingoJatekos(List<string> nev, char[,] kartya)
+		public BingoJatekos(string nev, int[,] kartya)
 		{
 			this.nev = nev;
 			this.kartya = kartya;
 		}
 
-		private void Beolvas(string fajlnev)
+		public void Megjelenit()
 		{
-			foreach (var sor in File.ReadAllLines(fajlnev))
+			for (int i = 0; i < ; i++)
 			{
-				this.nev.Add(sor);
+
 			}
 		}
 	}
